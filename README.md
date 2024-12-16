@@ -1,22 +1,18 @@
-O programa cumpre os requisitos especificados:
-Implementar uma classe que possibilite ler um arquivo CSV e retornar ao código o endereço
-da array bidimensional que contém os dados lidos do arquivo. Atenção, o tamanho do array
-bidimensional retornado deve ser do tamanho exato do conteúdo que ele armazena, não
-possuindo linhas ou colunas maior que a quantidade necessária.
-Assuma que os dados a serem lidos podem ser de dois tipos, float ou int. Tenha um
-método específico para a conversão do tipo string para o respectivo tipo que está lendo.
-Informações de configurações ou necessárias para executar a leitura dos dados devem ser
-inseridas na instanciação do objeto que fará a leitura. Como exemplo, podemos citar tais dados:
-• Caractere que delimita cada célula da linha
-• Nome do arquivo
-• Máximo de linhas
-• Máximo de colunas
-A implementação deve ser capaz de ler diferentes quantidades de linhas e colunas sem a
-necessidade de especificar a quantidade exata, apenas o limite máximo (se necessário) para
-cada.
-A classe implementada deve estar em um arquivo chamado read_csv.h, o qual deve ser
-importado no outro arquivo <Nome>_<Sobrenome>.cpp através da instrução:
-#include “read_csv.h”. Neste arquivo é implementado a função principal (main) a qual
-deverá conter as instruções necessárias para utilizar a classe desenvolvida. Dentro da main, faça
-a leitura dos dois arquivos anexos a este trabalho e imprima o conteúdo retornado pelo objeto da
-classe.
+#PROJETO 1 - PRIMEIRO BIMESTRE - PROGRAMAÇÃO ORIENTADA A OBJETOS - CDIA 2000
+##Resumo: O projeto cria um código em que uma classe retorna o endereço (ponteiro
+duplo para um array bidimensional) que será lido de um arquivo csv. O array retor-
+nado deve possuir o mesmo tamando da quantidade de linhas do arquivo lido.
+Modo de usar:
+* Os arquivos que serão lidos deverão estar na pasta output (VSCODE) para leitura.
+* Deve-se ajustar o nome do arquivo na linha 10 da função principal main().
+* Como eu usei a estrutura de template foi necessário realizar o check int/float
+dentro da função principal, eu tive uma certa dificuldade em imaginar como fazer
+isso sem usar esse recurso da linguagem. Isso evitou a necessidade de conversão de
+tipos e identificação dos mesmos.
+* Como eu usei os dados encapsulados nao foi necessário armazenar o retorno da
+função (ponteiro duplo para o array bidimensional). Mas como sabemos a instrução
+abaixo o faria:
+    `int** tabela = obj.geraTabela()`;
+
+*Muito obrigado*
+    LUCAS SILVA.
